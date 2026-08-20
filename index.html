@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Homepage</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #ffc107;
+            color: #212529;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #e0a800;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #212529;
+            color: #max-width;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">BrandName</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Showcase -->
+    <section class="hero">
+        <h1>Welcome to Your New Website</h1>
+        <p>This is a modern, responsive homepage blueprint designed to adapt beautifully to desktops, tablets, and phones.</p>
+        <a href="#about" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="container">
+        
+        <!-- Features Row -->
+        <section id="features" class="features">
+            <div class="feature-card">
+                <h3>Responsive Design</h3>
+                <p>Layout automatically scales gracefully across various user screens and dynamic device displays.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Clean Structure</h3>
+                <p>Built with accessible HTML5 elements like headers, nav, and sections for optimal search indexing.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Embedded CSS</h3>
+                <p>Styles are cleanly packaged right inside the head tag for fast initial browser rendering tests.</p>
+            </div>
+        </section>
+
+        <!-- About Description -->
+        <section id="about" class="about">
+            <h2>About Our Vision</h2>
+            <p>We build accessible templates that strip away unnecessary layout complexities. By utilizing core foundational CSS workflows like Flexbox and CSS Grid, you can easily shift components around to map directly to your personal brand or project needs.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer Copyright -->
+    <footer id="contact">
+        <p>&copy; 2026 BrandName. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
